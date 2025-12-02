@@ -72,7 +72,7 @@ portfolio/
 - [x] ProjectCard.tsx - Composant carte projet
 - [x] Projects.tsx - Grille des projets
 - [x] Experience.tsx - Stage Proximus
-- [ ] Skills.tsx - Compétences techniques
+- [x] Skills.tsx - Compétences techniques
 - [ ] Contact.tsx - Section contact
 
 ### Phase 4 : Assemblage

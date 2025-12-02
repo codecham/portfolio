@@ -5,6 +5,7 @@ export { default as SectionHeader } from "./Sectionheader";
 export { default as TechBadge } from "./TechBadge";
 export { default as ProjectCard } from "./ProjectCard";
 export { default as ProjectModal } from "./ProjectModal";
+export { default as SkillCard } from "./SkillCard";
 
 // Types
 export type { Project } from "./ProjectCard";
