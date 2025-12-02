@@ -1,53 +1,53 @@
 export const personalInfo = {
   name: "Corentin Dechamps",
-  title: "Développeur FullStack",
+  title: "FullStack Developer",
   email: "corentin.dechamps@gmail.com",
   github: "https://github.com/codecham",
   linkedin: "https://linkedin.com/in/corentindechamps",
-  description: "Diplômé de 42 Belgium, passionné par le développement web..."
+  description: "42 Belgium graduate, passionate about web development..."
 };
 
 export const projects = [
   {
     id: 1,
     title: "ft_transcendence",
-    description: "Application web de jeu Pong multijoueur avec chat en temps réel",
+    description: "Multiplayer Pong web application with real-time chat",
     technologies: ["React", "NestJS", "PostgreSQL", "WebSocket"],
     image: "/images/projects/transcendence.png",
     github: "https://github.com/...",
-    demo: null, // ou lien vers démo si disponible
+    demo: null,
     highlights: [
-      "Authentification OAuth 42",
-      "Jeu en temps réel avec WebSocket",
-      "Système de matchmaking"
+      "OAuth 42 authentication",
+      "Real-time gameplay with WebSocket",
+      "Matchmaking system"
     ]
   },
   {
     id: 2,
     title: "webserv",
-    description: "Serveur HTTP écrit from scratch en C++",
+    description: "HTTP server written from scratch in C++",
     technologies: ["C++", "HTTP", "Sockets"],
     image: "/images/projects/webserv.png",
     github: "https://github.com/...",
     demo: null,
     highlights: [
-      "Gestion des requêtes GET/POST/DELETE",
-      "Support CGI",
-      "Configuration par fichier"
+      "GET/POST/DELETE request handling",
+      "CGI support",
+      "Configuration file parsing"
     ]
   },
-  // Ajouter d'autres projets...
+  // Add more projects...
 ];
 
 export const experience = {
   company: "Proximus",
-  role: "Développeur FullStack (Stage)",
-  period: "Dates de ton stage",
-  description: "Description de ton rôle et missions...",
+  role: "FullStack Developer (Internship)",
+  period: "Your internship dates",
+  description: "Description of your role and missions...",
   achievements: [
-    "Développement de fonctionnalités sur...",
-    "Collaboration avec l'équipe...",
-    "Technologies utilisées..."
+    "Developed features on...",
+    "Collaborated with the team...",
+    "Technologies used..."
   ],
   technologies: ["React", "Node.js", "..."]
 };
@@ -58,5 +58,5 @@ export const skills = {
   backend: ["Node.js", "NestJS", "Express"],
   databases: ["PostgreSQL", "MongoDB", "MySQL"],
   tools: ["Git", "Docker", "Linux", "VS Code"],
-  soft: ["Travail d'équipe", "Autonomie", "Résolution de problèmes"]
+  soft: ["Teamwork", "Autonomy", "Problem solving"]
 };

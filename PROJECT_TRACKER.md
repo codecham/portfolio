@@ -58,14 +58,14 @@ portfolio/
 - [x] Créer le projet Next.js
 - [x] Créer les dossiers (components, data, lib)
 - [x] Créer le fichier content.ts
-- [ ] Configurer tailwind.config.ts (couleurs personnalisées)
-- [ ] Configurer globals.css (classes utilitaires)
-- [ ] Configurer layout.tsx (metadata SEO + font)
+- [x] Configurer tailwind.config.ts (couleurs personnalisées)
+- [x] Configurer globals.css (classes utilitaires)
+- [x] Configurer layout.tsx (metadata SEO + font)
 
 ### Phase 2 : Composants de Base
-- [ ] Header.tsx - Navigation
-- [ ] Footer.tsx - Pied de page
-- [ ] Hero.tsx - Section d'accroche
+- [x] Header.tsx - Navigation
+- [x] Footer.tsx - Pied de page
+- [x] Hero.tsx - Section d'accroche
 
 ### Phase 3 : Sections Principales
 - [ ] About.tsx - Parcours et présentation
