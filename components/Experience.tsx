@@ -37,7 +37,7 @@ const calendarIcon = (
 
 // Checkmark icon for achievements
 const checkIcon = (
-  <svg className="w-4 h-4 text-primary flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+  <svg className="w-4 h-4 text-primary shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
   </svg>
 );
@@ -72,7 +72,7 @@ export default function Experience() {
         <div className="mt-14 md:mt-20 max-w-4xl mx-auto">
           <article className="bg-surface border border-border rounded-2xl overflow-hidden">
             {/* Card Header */}
-            <div className="p-6 md:p-8 border-b border-border bg-gradient-to-r from-primary/5 via-transparent to-accent/5">
+            <div className="p-6 md:p-8 border-b border-border bg-linear-to-r from-primary/5 via-transparent to-accent/5">
               <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-4">
                 {/* Company & Role */}
                 <div>

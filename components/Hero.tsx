@@ -38,7 +38,7 @@ export default function Hero() {
         {/* Description */}
         <div className="flex justify-center mb-10 animate-fade-in-up delay-200">
           <p className="text-base md:text-lg text-text-subtle max-w-2xl text-center">
-            Graduate from <span className="text-text">42 Belgium</span>, passionate about modern web development. I build performant applications with React, Next.js and Node.js.
+            From low-level C/C++ at 42 Belgium to modern fullstack development. I combine strong software foundations with Angular, React, Next.js and NestJS to build robust, scalable applications.
           </p>
         </div>
 

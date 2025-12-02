@@ -1,5 +1,5 @@
 import { aboutData } from "@/data/content";
-import { SectionHeader, HighlightCard, StatsGrid, Button } from "@/components/ui";
+import { SectionHeader, HighlightCard, StatsGrid } from "@/components/ui";
 
 // Icons
 const icons = {
@@ -22,13 +22,6 @@ const icons = {
     </svg>
   ),
 };
-
-const downloadIcon = (
-  <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} 
-      d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
-  </svg>
-);
 
 const stats = [
   { value: "42", label: "Belgium Graduate" },
@@ -64,18 +57,6 @@ export default function About() {
                   {paragraph}
                 </p>
               ))}
-            </div>
-
-            {/* Button */}
-            <div className="mt-8">
-              <Button
-                href="/cv.pdf"
-                variant="primary"
-                icon={downloadIcon}
-                external
-              >
-                Download CV
-              </Button>
             </div>
           </div>
 

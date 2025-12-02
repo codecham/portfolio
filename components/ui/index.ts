@@ -6,6 +6,7 @@ export { default as TechBadge } from "./TechBadge";
 export { default as ProjectCard } from "./ProjectCard";
 export { default as ProjectModal } from "./ProjectModal";
 export { default as SkillCard } from "./SkillCard";
+export { default as HackerRankBadge } from "./HackerRankBadge";
 
 // Types
 export type { Project } from "./ProjectCard";
