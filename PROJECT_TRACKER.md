@@ -69,8 +69,8 @@ portfolio/
 
 ### Phase 3 : Sections Principales
 - [x] About.tsx - Parcours et présentation
-- [ ] ProjectCard.tsx - Composant carte projet
-- [ ] Projects.tsx - Grille des projets
+- [x] ProjectCard.tsx - Composant carte projet
+- [x] Projects.tsx - Grille des projets
 - [ ] Experience.tsx - Stage Proximus
 - [ ] Skills.tsx - Compétences techniques
 - [ ] Contact.tsx - Section contact
