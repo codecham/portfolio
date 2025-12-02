@@ -71,7 +71,7 @@ portfolio/
 - [x] About.tsx - Parcours et présentation
 - [x] ProjectCard.tsx - Composant carte projet
 - [x] Projects.tsx - Grille des projets
-- [ ] Experience.tsx - Stage Proximus
+- [x] Experience.tsx - Stage Proximus
 - [ ] Skills.tsx - Compétences techniques
 - [ ] Contact.tsx - Section contact
 
