@@ -138,21 +138,75 @@ export const projects = [
   },
 ];
 
-// ============================================
-// EXPERIENCE
-// ============================================
 export const experience = {
   company: "Proximus",
+  logo: "/images/proximus-logo.png", // Optional
   role: "FullStack Developer Intern",
-  period: "2024", // À ajuster avec les vraies dates
+  team: "Platform & Tools (Data Department)",
+  location: "Brussels, Belgium",
+  period: "Aug 2024 - Jan 2025",
+  duration: "6 months",
   description:
-    "Contributed to the development of internal tools, gaining hands-on experience in a professional environment with modern development practices and agile methodologies.",
-  achievements: [
-    "Developed features for internal applications used by multiple teams",
-    "Collaborated with senior developers in an agile environment",
-    "Gained experience with enterprise-level development workflows",
+    "Joined a Data Engineering team to work on an internal orchestration/ETL tool used daily by data engineers. Combined feature development, UX improvements, and strategic technical analysis in a real production environment.",
+
+  // Timeline phases for visual storytelling
+  phases: [
+    {
+      title: "Enhance & Improve",
+      description:
+        "Worked on the existing Python Dash + React application. Implemented new features, fixed bugs, improved UX, and gathered direct feedback from end users.",
+      icon: "code",
+    },
+    {
+      title: "Analyze & Recommend",
+      description:
+        "Conducted a technical analysis for a future cloud migration. Evaluated multiple approaches and recommended Angular 19 + FastAPI for scalability and long-term maintainability.",
+      icon: "search",
+    },
+    {
+      title: "Build PoC",
+      description:
+        "Developed a complete Proof of Concept with Angular + PrimeNG frontend and FastAPI backend, demonstrating a modern cloud-ready architecture.",
+      icon: "rocket",
+    },
   ],
-  technologies: ["React", "Node.js", "TypeScript"], // À compléter
+
+  // Key achievements (impactful bullets)
+  achievements: [
+    "Delivered production-ready features used daily by data engineers",
+    "Gathered user feedback to drive UX improvements",
+    "Led technical analysis for cloud migration strategy",
+    "Built a complete PoC validating the recommended architecture",
+    "Earned strong positive feedback from supervisors",
+  ],
+
+  // Tech stacks (existing + new)
+  technologies: {
+    existing: ["Python", "Dash", "React"],
+    recommended: ["Angular 19", "PrimeNG", "FastAPI", "Python"],
+  },
+
+  // Testimonials from LinkedIn recommendations
+  testimonials: [
+    {
+      name: "Marc Matthys",
+      role: "People Manager in IT",
+      company: "Proximus",
+      relationship: "Direct Supervisor",
+      quote:
+        "Corentin is a passionate and trustworthy developer. He learns quickly, communicates well and is able to work both independently and in collaboration mode.",
+      linkedin: "https://www.linkedin.com/in/marc-matthys-291a07175", // À ajuster avec le vrai lien
+    },
+    {
+      name: "Jonathan Perin",
+      role: "Data Governance Lead",
+      company: "Proximus",
+      relationship: "Colleague",
+      quote:
+        "What makes Corentin truly remarkable is his adaptability... He always approached challenges with curiosity and an open mind. A very friendly and approachable colleague who brings a positive attitude to the team.",
+      linkedin: "https://www.linkedin.com/in/jonathanperin", // À ajuster avec le vrai lien
+    },
+  ],
 };
 
 // ============================================
