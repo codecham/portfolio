@@ -35,21 +35,6 @@
   --color-gradient-start: #0070f3;
   --color-gradient-end: #00d4ff;
   
-  /* Espacements personnalisés */
-  --spacing-section: 6rem;
-  --spacing-section-sm: 4rem;
-  
-  /* Border radius */
-  --radius-sm: 0.375rem;
-  --radius-md: 0.5rem;
-  --radius-lg: 0.75rem;
-  --radius-xl: 1rem;
-  
-  /* Transitions */
-  --transition-fast: 150ms ease;
-  --transition-base: 200ms ease;
-  --transition-slow: 300ms ease;
-  
   /* Shadows */
   --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.3);
   --shadow-md: 0 4px 6px rgba(0, 0, 0, 0.4);
@@ -58,133 +43,118 @@
 }
 
 /* ========================================
-   STYLES DE BASE
+   BASE STYLES (dans le bon layer)
    ======================================== */
 
-* {
-  box-sizing: border-box;
-  padding: 0;
-  margin: 0;
-}
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 5rem;
+  }
 
-html {
-  scroll-behavior: smooth;
-  scroll-padding-top: 5rem; /* Pour le header fixe */
-}
+  body {
+    background: var(--color-background);
+    color: var(--color-text);
+    font-family: var(--font-geist-sans), system-ui, sans-serif;
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
 
-body {
-  background: var(--color-background);
-  color: var(--color-text);
-  font-family: var(--font-geist-sans), system-ui, sans-serif;
-  line-height: 1.6;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  h1, h2, h3, h4, h5, h6 {
+    font-weight: 600;
+    line-height: 1.2;
+    letter-spacing: -0.02em;
+  }
+
+  a {
+    color: inherit;
+    text-decoration: none;
+  }
 }
 
 /* ========================================
-   TYPOGRAPHIE
+   COMPONENTS (dans le bon layer)
    ======================================== */
 
-h1, h2, h3, h4, h5, h6 {
-  font-weight: 600;
-  line-height: 1.2;
-  letter-spacing: -0.02em;
-}
-
-h1 {
-  font-size: clamp(2.5rem, 5vw, 4rem);
-}
-
-h2 {
-  font-size: clamp(1.75rem, 3vw, 2.5rem);
-}
-
-h3 {
-  font-size: clamp(1.25rem, 2vw, 1.5rem);
-}
-
-/* ========================================
-   LIENS ET INTERACTIONS
-   ======================================== */
-
-a {
-  color: inherit;
-  text-decoration: none;
-  transition: color var(--transition-fast);
-}
-
-a:hover {
-  color: var(--color-primary);
-}
-
-/* ========================================
-   CLASSES UTILITAIRES PERSONNALISÉES
-   ======================================== */
-
-/* Dégradé de texte */
-.text-gradient {
-  background: linear-gradient(135deg, var(--color-gradient-start), var(--color-gradient-end));
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-}
-
-/* Bordure avec dégradé */
-.border-gradient {
-  position: relative;
-  background: var(--color-surface);
-  border-radius: var(--radius-lg);
-}
-
-.border-gradient::before {
-  content: '';
-  position: absolute;
-  inset: 0;
-  padding: 1px;
-  border-radius: inherit;
-  background: linear-gradient(135deg, var(--color-gradient-start), var(--color-gradient-end));
-  mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
-  mask-composite: exclude;
-  -webkit-mask-composite: xor;
-  pointer-events: none;
-}
-
-/* Effet de brillance au hover */
-.glow-hover {
-  transition: box-shadow var(--transition-base);
-}
-
-.glow-hover:hover {
-  box-shadow: var(--shadow-glow);
-}
-
-/* Container responsive */
-.container-custom {
-  width: 100%;
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 1.5rem;
-}
-
-@media (min-width: 768px) {
+@layer components {
+  /* Container responsive */
   .container-custom {
-    padding: 0 2rem;
+    width: 100%;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
   }
-}
 
-/* Section spacing */
-.section {
-  padding: var(--spacing-section-sm) 0;
-}
+  @media (min-width: 768px) {
+    .container-custom {
+      padding-left: 3rem;
+      padding-right: 3rem;
+    }
+  }
 
-@media (min-width: 768px) {
-  .section {
-    padding: var(--spacing-section) 0;
+  @media (min-width: 1024px) {
+    .container-custom {
+      padding-left: 4rem;
+      padding-right: 4rem;
+    }
+  }
+
+  /* Dégradé de texte */
+  .text-gradient {
+    background: linear-gradient(135deg, var(--color-gradient-start), var(--color-gradient-end));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  /* Bordure avec dégradé */
+  .border-gradient {
+    position: relative;
+    background: var(--color-surface);
+    border-radius: 0.75rem;
+  }
+
+  .border-gradient::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    padding: 1px;
+    border-radius: inherit;
+    background: linear-gradient(135deg, var(--color-gradient-start), var(--color-gradient-end));
+    mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+    mask-composite: exclude;
+    -webkit-mask-composite: xor;
+    pointer-events: none;
   }
 }
 
 /* ========================================
-   ANIMATIONS
+   UTILITIES (dans le bon layer)
+   ======================================== */
+
+@layer utilities {
+  /* Animations */
+  .animate-fade-in-up {
+    animation: fadeInUp 0.6s ease forwards;
+  }
+
+  .animate-fade-in {
+    animation: fadeIn 0.4s ease forwards;
+  }
+
+  /* Délais d'animation */
+  .delay-100 { animation-delay: 100ms; }
+  .delay-200 { animation-delay: 200ms; }
+  .delay-300 { animation-delay: 300ms; }
+  .delay-400 { animation-delay: 400ms; }
+  .delay-500 { animation-delay: 500ms; }
+}
+
+/* ========================================
+   KEYFRAMES (hors layer, c'est OK)
    ======================================== */
 
 @keyframes fadeInUp {
@@ -199,44 +169,12 @@ a:hover {
 }
 
 @keyframes fadeIn {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
+  from { opacity: 0; }
+  to { opacity: 1; }
 }
-
-@keyframes pulse-glow {
-  0%, 100% {
-    box-shadow: 0 0 20px rgba(0, 112, 243, 0.3);
-  }
-  50% {
-    box-shadow: 0 0 30px rgba(0, 112, 243, 0.5);
-  }
-}
-
-.animate-fade-in-up {
-  animation: fadeInUp 0.6s ease forwards;
-}
-
-.animate-fade-in {
-  animation: fadeIn 0.4s ease forwards;
-}
-
-.animate-pulse-glow {
-  animation: pulse-glow 2s ease-in-out infinite;
-}
-
-/* Délais d'animation pour les éléments en cascade */
-.delay-100 { animation-delay: 100ms; }
-.delay-200 { animation-delay: 200ms; }
-.delay-300 { animation-delay: 300ms; }
-.delay-400 { animation-delay: 400ms; }
-.delay-500 { animation-delay: 500ms; }
 
 /* ========================================
-   SCROLLBAR PERSONNALISÉE
+   SCROLLBAR & SELECTION (hors layer, c'est OK)
    ======================================== */
 
 ::-webkit-scrollbar {
@@ -255,10 +193,6 @@ a:hover {
 ::-webkit-scrollbar-thumb:hover {
   background: var(--color-border-light);
 }
-
-/* ========================================
-   SÉLECTION DE TEXTE
-   ======================================== */
 
 ::selection {
   background: var(--color-primary);

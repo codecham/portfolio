@@ -68,7 +68,7 @@ portfolio/
 - [x] Hero.tsx - Section d'accroche
 
 ### Phase 3 : Sections Principales
-- [ ] About.tsx - Parcours et présentation
+- [x] About.tsx - Parcours et présentation
 - [ ] ProjectCard.tsx - Composant carte projet
 - [ ] Projects.tsx - Grille des projets
 - [ ] Experience.tsx - Stage Proximus
