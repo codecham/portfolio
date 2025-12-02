@@ -73,7 +73,7 @@ portfolio/
 - [x] Projects.tsx - Grille des projets
 - [x] Experience.tsx - Stage Proximus
 - [x] Skills.tsx - Compétences techniques
-- [ ] Contact.tsx - Section contact
+- [x] Contact.tsx - Section contact
 
 ### Phase 4 : Assemblage
 - [ ] Intégrer tous les composants dans page.tsx

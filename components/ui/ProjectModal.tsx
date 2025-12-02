@@ -60,7 +60,7 @@ export default function ProjectModal({ project, isOpen, onClose }: ProjectModalP
                 alt={project.title}
                 className="w-full h-full object-cover"
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-surface via-surface/30 to-transparent" />
+              <div className="absolute inset-0 bg-linear-to-t from-surface via-surface/30 to-transparent" />
             </>
           ) : (
             <div className={`w-full h-full flex items-center justify-center ${project.gradient}`}>
